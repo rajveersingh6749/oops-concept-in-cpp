@@ -1,6 +1,6 @@
 /*
 
-3. How do getters and setters help in encapsulation?
+Q 11. How do getters and setters help in encapsulation?
 
 Definition:
 Getters and setters are public methods used to read and write private data safely, often including checks or validations.

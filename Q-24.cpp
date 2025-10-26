@@ -1,5 +1,5 @@
 /*
-2. Explain Compile-time (Static) and Run-time (Dynamic) Polymorphism
+Q 24. Explain Compile-time (Static) and Run-time (Dynamic) Polymorphism
 
 | Type         | When Resolved      | Achieved By                                 | Example                                               |
 | ------------ | ------------------ | ------------------------------------------- | ----------------------------------------------------- |
