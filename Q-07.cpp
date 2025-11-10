@@ -16,18 +16,26 @@ using namespace std;
 // Compile-time (Function Overloading)
 class Example {
 public:
-    void show(int x) { cout << "Integer: " << x << endl; }
-    void show(double y) { cout << "Double: " << y << endl; }
+    void show(int x) { 
+        cout << "Integer: " << x << endl; 
+    }
+    void show(double y) { 
+        cout << "Double: " << y << endl; 
+    }
 };
 
 // Run-time (Function Overriding)
 class Base {
 public:
-    virtual void display() { cout << "Base class" << endl; }
+    virtual void display() { 
+        cout << "Base class" << endl; 
+    }
 };
 class Derived : public Base {
 public:
-    void display() override { cout << "Derived class" << endl; }
+    void display() override { 
+        cout << "Derived class" << endl;
+    }
 };
 
 int main() {
@@ -39,5 +47,6 @@ int main() {
     Derived d;
     b = &d;
     b->display(); // Runtime binding
+    
     return 0;
 }
