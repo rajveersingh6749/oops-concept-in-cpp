@@ -27,3 +27,10 @@ public:
         cout << "Car is running" << endl;
     }
 };
+
+int main() {
+    Car myCar;
+    myCar.drive();
+    
+    return 0;
+}
