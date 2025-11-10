@@ -43,7 +43,9 @@ private:
     string title;
 public:
     Book(string t) : title(t) {}
-    string getTitle() const { return title; }
+    string getTitle() const { 
+        return title; 
+    }
 };
 
 class Library {

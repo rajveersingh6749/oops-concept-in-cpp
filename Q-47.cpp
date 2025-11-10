@@ -39,7 +39,9 @@ private:
 public:
     static int count;
 
-    Box(int w) : width(w) { count++; }
+    Box(int w) : width(w) { 
+        count++; 
+    }
 
     friend void showWidth(Box b);
 };
