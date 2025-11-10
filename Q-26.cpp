@@ -27,6 +27,7 @@ int main() {
     Animal* a = new Dog();
     a->speak();  // Calls Dog’s speak() at runtime
     delete a;
+    
     return 0;
 }
 

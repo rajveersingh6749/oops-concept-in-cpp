@@ -27,5 +27,6 @@ public:
 int main() {
     Base::print();    // Base version
     Derived::print(); // Derived version (hiding, not overriding)
+    
     return 0;
 }

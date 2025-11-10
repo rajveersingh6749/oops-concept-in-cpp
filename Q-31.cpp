@@ -13,11 +13,15 @@ using namespace std;
 
 class A {
 public:
-    void show() { cout << "Class A" << endl; }
+    void show() { 
+        cout << "Class A" << endl; 
+    }
 };
 class B {
 public:
-    void show() { cout << "Class B" << endl; }
+    void show() { 
+        cout << "Class B" << endl; 
+    }
 };
 class C : public A, public B {
 public:
@@ -30,6 +34,7 @@ public:
 int main() {
     C obj;
     obj.display();
+    
     return 0;
 }
 

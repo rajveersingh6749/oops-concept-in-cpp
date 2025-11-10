@@ -21,7 +21,9 @@ using namespace std;
 class Shape {
 public:
     virtual void draw() = 0;  // pure virtual
-    void info() { cout << "I am a shape\n"; }
+    void info() {
+        cout << "I am a shape\n"; 
+    }
 };
 
 // Interface-like class
@@ -41,5 +43,6 @@ int main() {
     Circle c;
     c.info();
     c.draw();
+    
     return 0;
 }

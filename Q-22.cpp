@@ -11,7 +11,9 @@ using namespace std;
 
 class Base {
 public:
-    void display() { cout << "Base display" << endl; }
+    void display() {
+        cout << "Base display" << endl; 
+    }
 };
 
 class Derived : public Base {
@@ -25,5 +27,6 @@ public:
 int main() {
     Derived d;
     d.display();
+    
     return 0;
 }
