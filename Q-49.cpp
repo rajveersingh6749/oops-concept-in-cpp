@@ -50,7 +50,9 @@ class Library {
 private:
     vector<Book> books;
 public:
-    void addBook(const Book& b) { books.push_back(b); }
+    void addBook(const Book& b) { 
+        books.push_back(b); 
+    }
     void showBooks() {
         cout << "Books in Library:\n";
         for (auto& b : books)

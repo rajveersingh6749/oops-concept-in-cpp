@@ -31,12 +31,15 @@ private:
     int radius; // encapsulation
 public:
     Circle(int r) : radius(r) {}
-    void draw() override { cout << "Drawing circle of radius " << radius << endl; }
+    void draw() override { 
+        cout << "Drawing circle of radius " << radius << endl; 
+    }
 };
 
 int main() {
     Shape* s = new Circle(10);
     s->draw();  // polymorphism (runtime)
     delete s;
+    
     return 0;
 }

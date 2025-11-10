@@ -46,7 +46,9 @@ public:
         delete[] name;
     }
 
-    void show() { cout << "Name: " << name << endl; }
+    void show() { 
+        cout << "Name: " << name << endl; 
+    }
 };
 
 int main() {

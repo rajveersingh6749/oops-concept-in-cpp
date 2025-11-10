@@ -65,7 +65,9 @@ public:
             cout << "Insufficient balance\n";
     }
 
-    double getBalance() const { return balance; }
+    double getBalance() const { 
+        return balance; 
+    }
 };
 
 int main() {

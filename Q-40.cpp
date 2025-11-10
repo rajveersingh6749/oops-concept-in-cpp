@@ -79,8 +79,12 @@ private:
 public:
     Book(string t, string a) : LibraryItem(t), author(a), isAvailable(true) {}
 
-    void borrowBook() { isAvailable = false; }
-    void returnBook() { isAvailable = true; }
+    void borrowBook() { 
+        isAvailable = false; 
+    }
+    void returnBook() { 
+        isAvailable = true; 
+    }
 
     void displayInfo() override { // Polymorphism
         cout << "Book: " << title << " by " << author 
@@ -93,7 +97,9 @@ class Library {
 private:
     vector<Book> books; // Composition: Library HAS books
 public:
-    void addBook(Book b) { books.push_back(b); }
+    void addBook(Book b) { 
+        books.push_back(b); 
+    }
     void showBooks() {
         for (auto &book : books) book.displayInfo();
     }
@@ -107,5 +113,6 @@ int main() {
     lib.addBook(b1);
     lib.addBook(b2);
     lib.showBooks();
+
     return 0;
 }

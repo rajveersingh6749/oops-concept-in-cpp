@@ -43,7 +43,9 @@ public:
         return Complex(real + c.real, imag + c.imag);
     }
 
-    void show() { cout << real << " + " << imag << "i\n"; }
+    void show() { 
+        cout << real << " + " << imag << "i\n"; 
+    }
 };
 
 int main() {

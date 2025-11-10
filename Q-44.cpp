@@ -46,17 +46,23 @@ using namespace std;
 
 class Animal {
 public:
-    virtual void sound() { cout << "Animal sound\n"; }
+    virtual void sound() { 
+        cout << "Animal sound\n"; 
+    }
 };
 
 class Dog : public Animal {
 public:
-    void sound() override { cout << "Dog barks 🐶\n"; }
+    void sound() override { 
+        cout << "Dog barks 🐶\n"; 
+    }
 };
 
 class Cat : public Animal {
 public:
-    void sound() override { cout << "Cat meows 🐱\n"; }
+    void sound() override { 
+        cout << "Cat meows 🐱\n"; 
+    }
 };
 
 int main() {

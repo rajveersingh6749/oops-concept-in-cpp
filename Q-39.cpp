@@ -62,7 +62,9 @@ protected:
     string brand;
 public:
     Vehicle(string b) : brand(b) {}
-    virtual void start() { cout << brand << " vehicle starting..." << endl; }
+    virtual void start() { 
+        cout << brand << " vehicle starting..." << endl; 
+    }
 };
 
 class Car : public Vehicle {
@@ -72,10 +74,16 @@ private:
 public:
     Car(string b, int s, float f) : Vehicle(b), speed(s), fuelLevel(f) {}
 
-    void setSpeed(int s) { speed = s; }         // encapsulation
-    int getSpeed() const { return speed; }
+    void setSpeed(int s) { // encapsulation
+        speed = s;
+    }         
+    int getSpeed() const { 
+        return speed; 
+    }
 
-    void refuel(float amount) { fuelLevel += amount; }
+    void refuel(float amount) { 
+        fuelLevel += amount; 
+    }
 
     void start() override {                     // polymorphism
         cout << brand << " car starting with speed " << speed << " km/h." << endl;
@@ -87,5 +95,6 @@ int main() {
     c.start();
     c.setSpeed(150);
     cout << "Current Speed: " << c.getSpeed() << " km/h" << endl;
+    
     return 0;
 }

@@ -47,12 +47,16 @@ using namespace std;
 
 class Vehicle {
 public:
-    void start() { cout << "Vehicle started\n"; }
+    void start() { 
+        cout << "Vehicle started\n"; 
+    }
 };
 
 class Car : public Vehicle {
 public:
-    void honk() { cout << "Car honks 🚗\n"; }
+    void honk() { 
+        cout << "Car honks 🚗\n"; 
+    }
 };
 
 int main() {
