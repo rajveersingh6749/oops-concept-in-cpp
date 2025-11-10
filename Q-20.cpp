@@ -11,7 +11,9 @@ using namespace std;
 
 class Base {
 public:
-    Base(int x) { cout << "Base constructor called: " << x << endl; }
+    Base(int x) { 
+        cout << "Base constructor called: " << x << endl; 
+    }
 };
 
 class Derived : public Base {
@@ -23,5 +25,6 @@ public:
 
 int main() {
     Derived d(10);
+    
     return 0;
 }
