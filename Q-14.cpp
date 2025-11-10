@@ -30,5 +30,6 @@ int main() {
     Animal* a = new Dog();
     a->sound();
     delete a;
+    
     return 0;
 }

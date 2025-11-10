@@ -22,13 +22,17 @@ Q 17. What are the types of inheritance?
 using namespace std;
 
 class A {
-public:
-    void showA() { cout << "Class A" << endl; }
+    public:
+    void showA() { 
+        cout << "Class A" << endl; 
+    }
 };
 
 class B : public A {
-public:
-    void showB() { cout << "Class B" << endl; }
+    public:
+    void showB() { 
+        cout << "Class B" << endl; 
+    }
 };
 */
 
@@ -39,16 +43,22 @@ public:
 using namespace std;
 
 class A {
-public:
-    void showA() { cout << "Class A" << endl; }
+    public:
+    void showA() { 
+        cout << "Class A" << endl;
+    }
 };
 class B {
-public:
-    void showB() { cout << "Class B" << endl; }
+    public:
+    void showB() {
+        cout << "Class B" << endl; 
+    }
 };
 class C : public A, public B {
-public:
-    void showC() { cout << "Class C" << endl; }
+    public:
+    void showC() { 
+        cout << "Class C" << endl; 
+    }
 };
 */
 
@@ -57,9 +67,24 @@ public:
 #include <iostream>
 using namespace std;
 
-class A { public: void showA() { cout << "A" << endl; } };
-class B : public A { public: void showB() { cout << "B" << endl; } };
-class C : public B { public: void showC() { cout << "C" << endl; } };
+class A { 
+    public: 
+    void showA() { 
+        cout << "A" << endl; 
+    } 
+};
+class B : public A { 
+    public: 
+    void showB() { 
+        cout << "B" << endl; 
+    } 
+};
+class C : public B { 
+    public: 
+    void showC() { 
+        cout << "C" << endl;
+    } 
+};
 */
 
 
@@ -68,9 +93,24 @@ class C : public B { public: void showC() { cout << "C" << endl; } };
 #include <iostream>
 using namespace std;
 
-class A { public: void baseFunc() { cout << "Base class" << endl; } };
-class B : public A { public: void derivedB() { cout << "Derived B" << endl; } };
-class C : public A { public: void derivedC() { cout << "Derived C" << endl; } };
+class A { 
+    public: 
+    void baseFunc() { 
+        cout << "Base class" << endl; 
+    } 
+};
+class B : public A { 
+    public: 
+    void derivedB() { 
+        cout << "Derived B" << endl; 
+    } 
+};
+class C : public A { 
+    public: 
+    void derivedC() { 
+        cout << "Derived C" << endl; 
+    } 
+};
 */
 
 // 🧩 Hybrid Inheritance

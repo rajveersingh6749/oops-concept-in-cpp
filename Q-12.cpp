@@ -34,6 +34,7 @@ int main() {
     Shape* s = new Circle();
     s->draw();
     delete s;
+    
     return 0;
 }
 

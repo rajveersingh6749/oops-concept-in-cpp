@@ -30,5 +30,6 @@ int main() {
     Dog d;
     d.eat();  // inherited method
     d.bark(); // own method
+    
     return 0;
 }

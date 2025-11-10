@@ -12,17 +12,22 @@ using namespace std;
 
 class Animal {
 public:
-    virtual void sound() { cout << "Animal sound" << endl; }
+    virtual void sound() { 
+        cout << "Animal sound" << endl; 
+    }
 };
 
 class Dog : public Animal {
 public:
-    void sound() override { cout << "Bark!" << endl; }
+    void sound() override { 
+        cout << "Bark!" << endl; 
+    }
 };
 
 int main() {
     Animal* a = new Dog();
     a->sound();  // Calls Dog’s sound() at runtime
     delete a;
+    
     return 0;
 }

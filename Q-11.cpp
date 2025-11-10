@@ -30,5 +30,6 @@ int main() {
     Employee e;
     e.setSalary(50000);
     cout << "Salary: " << e.getSalary() << endl;
+    
     return 0;
 }

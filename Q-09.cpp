@@ -29,5 +29,6 @@ int main() {
     Student s;
     s.setAge(21);
     cout << "Student age: " << s.getAge() << endl;
+    
     return 0;
 }

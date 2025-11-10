@@ -34,6 +34,7 @@ int main() {
     acc.deposit(1000);
     acc.withdraw(200);
     cout << "Current balance: " << acc.getBalance() << endl;
+    
     return 0;
 }
 
